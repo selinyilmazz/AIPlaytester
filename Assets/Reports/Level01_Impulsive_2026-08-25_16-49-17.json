@@ -1,0 +1,82 @@
+{
+    "LevelName": "Level01",
+    "Timestamp": "2026-08-25_16-49-17",
+    "PlayerProfile": "Impulsive",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 2.0,
+    "PlayerSuccessRate": 80.0,
+    "PlayerAverageSteps": 3.5,
+    "PlayerAverageWrongMoves": 1.7999999523162842,
+    "DifficultyScore": 2.799999952316284,
+    "Classification": "EASY",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Impulsive_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Trap",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Impulsive_06",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 5,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                }
+            ]
+        }
+    ]
+}

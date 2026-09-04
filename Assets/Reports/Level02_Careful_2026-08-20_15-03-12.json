@@ -1,0 +1,82 @@
+{
+    "LevelName": "Level02",
+    "Timestamp": "2026-08-20_15-03-12",
+    "PlayerProfile": "Careful",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 3.0,
+    "PlayerSuccessRate": 80.0,
+    "PlayerAverageSteps": 3.75,
+    "PlayerAverageWrongMoves": 0.8999999761581421,
+    "DifficultyScore": 2.4000000953674318,
+    "Classification": "EASY",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Careful_01",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Careful_02",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                }
+            ]
+        }
+    ]
+}

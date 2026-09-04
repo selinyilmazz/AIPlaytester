@@ -1,0 +1,166 @@
+{
+    "LevelName": "Level01",
+    "Timestamp": "2026-08-25_15-00-49",
+    "PlayerProfile": "Careful",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 2.0,
+    "PlayerSuccessRate": 60.0,
+    "PlayerAverageSteps": 2.6666667461395265,
+    "PlayerAverageWrongMoves": 1.600000023841858,
+    "DifficultyScore": 3.866666793823242,
+    "Classification": "MEDIUM",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Careful_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Trap",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Careful_01",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Key",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Careful_05",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Key",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Careful_07",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Key",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,274 @@
+{
+    "LevelName": "Level02",
+    "Timestamp": "2026-08-24_01-40-41",
+    "PlayerProfile": "Impulsive",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 3.0,
+    "PlayerSuccessRate": 40.0,
+    "PlayerAverageSteps": 5.0,
+    "PlayerAverageWrongMoves": 2.200000047683716,
+    "DifficultyScore": 5.666666507720947,
+    "Classification": "MEDIUM",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Impulsive_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Impulsive_01",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 5,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Impulsive_04",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Impulsive_05",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 5,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Impulsive_06",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Impulsive_07",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 5,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 2
+                }
+            ]
+        }
+    ]
+}

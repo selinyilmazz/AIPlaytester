@@ -1,0 +1,11 @@
+{
+    "LevelName": "Level02",
+    "Timestamp": "2026-08-11_00-57-06",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 2.0,
+    "PlayerSuccessRate": 50.0,
+    "PlayerAverageSteps": 2.0,
+    "PlayerAverageWrongMoves": 0.8999999761581421,
+    "DifficultyScore": 4.0,
+    "Classification": "MEDIUM"
+}

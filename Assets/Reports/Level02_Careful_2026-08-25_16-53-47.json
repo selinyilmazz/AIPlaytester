@@ -1,0 +1,128 @@
+{
+    "LevelName": "Level02",
+    "Timestamp": "2026-08-25_16-53-47",
+    "PlayerProfile": "Careful",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 3.0,
+    "PlayerSuccessRate": 70.0,
+    "PlayerAverageSteps": 4.285714149475098,
+    "PlayerAverageWrongMoves": 1.5,
+    "DifficultyScore": 3.4000000953674318,
+    "Classification": "MEDIUM",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Careful_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 2
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Careful_01",
+            "Outcome": 2,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                }
+            ]
+        },
+        {
+            "RunLabel": "Player_Careful_09",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 5,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Key2B",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 5,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Key2A",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 3,
+                    "ActionId": "Button2",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 4,
+                    "ActionId": "Trap2",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 3,
+                    "InteractableCountAfter": 3,
+                    "ResultingStatus": 2
+                }
+            ]
+        }
+    ]
+}

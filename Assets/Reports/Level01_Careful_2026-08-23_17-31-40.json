@@ -1,0 +1,36 @@
+{
+    "LevelName": "Level01",
+    "Timestamp": "2026-08-23_17-31-40",
+    "PlayerProfile": "Careful",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 2.0,
+    "PlayerSuccessRate": 90.0,
+    "PlayerAverageSteps": 2.444444417953491,
+    "PlayerAverageWrongMoves": 0.5,
+    "DifficultyScore": 1.3333333730697632,
+    "Classification": "EASY",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Careful_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Trap",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        }
+    ]
+}

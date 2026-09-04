@@ -1,0 +1,44 @@
+{
+    "LevelName": "Level01",
+    "Timestamp": "2026-08-24_00-33-45",
+    "PlayerProfile": "Normal",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 2.0,
+    "PlayerSuccessRate": 90.0,
+    "PlayerAverageSteps": 2.8888888359069826,
+    "PlayerAverageWrongMoves": 1.0,
+    "DifficultyScore": 1.6666667461395264,
+    "Classification": "EASY",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Normal_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Door",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 2,
+                    "ActionId": "Trap",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        }
+    ]
+}

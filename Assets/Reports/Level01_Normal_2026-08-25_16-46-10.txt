@@ -1,0 +1,11 @@
+LEVEL: Level01
+Tarih: 2026-08-25_16-46-10
+--------------------------------
+Solver Basari Orani: 100.0%
+Solver Ortalama Adim: 2.0
+Player Basari Orani: 70.0%
+Player Ortalama Adim: 3.4
+Player Ortalama Yanlis Hamle: 2.0
+--------------------------------
+Difficulty Score: 3.5 / 10
+Classification: MEDIUM

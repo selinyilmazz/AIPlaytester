@@ -1,0 +1,63 @@
+{
+    "Timestamp": "2026-08-24_01-19-10",
+    "Levels": [
+        {
+            "LevelName": "Level01",
+            "Profiles": [
+                {
+                    "Profile": "Careful",
+                    "SuccessRate": 80.0,
+                    "AverageSteps": 2.625,
+                    "AverageWrongMoves": 0.699999988079071,
+                    "DifficultyScore": 2.066666603088379,
+                    "Classification": "EASY"
+                },
+                {
+                    "Profile": "Normal",
+                    "SuccessRate": 70.0,
+                    "AverageSteps": 2.7142856121063234,
+                    "AverageWrongMoves": 1.0,
+                    "DifficultyScore": 2.866666793823242,
+                    "Classification": "EASY"
+                },
+                {
+                    "Profile": "Impulsive",
+                    "SuccessRate": 50.0,
+                    "AverageSteps": 4.0,
+                    "AverageWrongMoves": 2.0999999046325685,
+                    "DifficultyScore": 4.800000190734863,
+                    "Classification": "MEDIUM"
+                }
+            ]
+        },
+        {
+            "LevelName": "Level02",
+            "Profiles": [
+                {
+                    "Profile": "Careful",
+                    "SuccessRate": 50.0,
+                    "AverageSteps": 3.200000047683716,
+                    "AverageWrongMoves": 1.2999999523162842,
+                    "DifficultyScore": 4.4666666984558109,
+                    "Classification": "MEDIUM"
+                },
+                {
+                    "Profile": "Normal",
+                    "SuccessRate": 90.0,
+                    "AverageSteps": 4.44444465637207,
+                    "AverageWrongMoves": 1.2999999523162842,
+                    "DifficultyScore": 2.066666603088379,
+                    "Classification": "EASY"
+                },
+                {
+                    "Profile": "Impulsive",
+                    "SuccessRate": 40.0,
+                    "AverageSteps": 5.0,
+                    "AverageWrongMoves": 2.200000047683716,
+                    "DifficultyScore": 5.666666507720947,
+                    "Classification": "MEDIUM"
+                }
+            ]
+        }
+    ]
+}

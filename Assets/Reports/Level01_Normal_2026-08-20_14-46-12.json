@@ -1,0 +1,36 @@
+{
+    "LevelName": "Level01",
+    "Timestamp": "2026-08-20_14-46-12",
+    "PlayerProfile": "Normal",
+    "SolverSuccessRate": 100.0,
+    "SolverAverageSteps": 2.0,
+    "PlayerSuccessRate": 90.0,
+    "PlayerAverageSteps": 2.6666667461395265,
+    "PlayerAverageWrongMoves": 0.699999988079071,
+    "DifficultyScore": 1.4666666984558106,
+    "Classification": "EASY",
+    "FailedRunTraces": [
+        {
+            "RunLabel": "Player_Normal_00",
+            "Outcome": 1,
+            "Trace": [
+                {
+                    "StepIndex": 0,
+                    "ActionId": "Button",
+                    "WasEffective": false,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 0
+                },
+                {
+                    "StepIndex": 1,
+                    "ActionId": "Trap",
+                    "WasEffective": true,
+                    "InteractableCountBefore": 4,
+                    "InteractableCountAfter": 4,
+                    "ResultingStatus": 2
+                }
+            ]
+        }
+    ]
+}
