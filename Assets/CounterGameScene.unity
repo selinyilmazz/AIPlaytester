@@ -279,9 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSimBrain
   scanner: {fileID: 0}
-  maxSteps: 20
+  maxSteps: 30
   stepDelay: 1
-  timeoutSeconds: 10
+  timeoutSeconds: 30
   simulationSpeed: 1
   profileType: 1
 --- !u!4 &1150555145
@@ -469,7 +469,7 @@ MonoBehaviour:
   solverBrain: {fileID: 0}
   playerBrain: {fileID: 1150555144}
   solverTestCount: 5
-  playerTestCount: 100
+  playerTestCount: 20
   levels:
   - levelName: Level01
     levelRoot: {fileID: 1083891726}

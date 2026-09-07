@@ -128,6 +128,18 @@ public class CounterGameAdapter : MonoBehaviour, IGameAdapter, IGameLevelProvide
             }
         }
 
+        // GENERIC FRAMEWORK - ADIM 9: sayacin gercek degeri, Interactables.Count/Status
+        // hicbir zaman yakalayamayacagi icin (butonlar kalici, Status sadece kazanma/
+        // kaybetmede degisir) GameState.StateSignature uzerinden disariya tasiniyor.
+        state.StateSignature = currentValue.ToString();
+
+        // GENERIC FRAMEWORK - ADIM 11: aktif level varsa hedefe olan mutlak uzakligi
+        // GameState.DistanceToGoal'a yaziyoruz (dusuk deger = hedefe daha yakin).
+        // activeLevel henuz atanmamissa (LoadLevel/ResetLevel hic cagrilmadiysa)
+        // null birakiliyor - PlayerSimBrain bunu ProgressClassification.Unknown
+        // olarak yorumlayacak, hicbir hataya/varsayima yol acmiyor.
+        state.DistanceToGoal = activeLevel != null ? (float?)Mathf.Abs(activeLevel.target - currentValue) : null;
+
         return state;
     }
 
@@ -145,7 +157,7 @@ public class CounterGameAdapter : MonoBehaviour, IGameAdapter, IGameLevelProvide
         }
 
         // Sonra "kaybetme" kontrolu: sayac esigi ulasir/asarsa Failed.
-        if (currentValue >= activeLevel.failThreshold)
+        if (currentValue <= activeLevel.failThreshold)
         {
             return LevelStatus.Failed;
         }

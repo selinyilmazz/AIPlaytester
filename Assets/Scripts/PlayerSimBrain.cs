@@ -24,6 +24,8 @@ public class PlayerSimBrain : MonoBehaviour
     private string chosenActionId;
     private int interactableCountBeforeAction;
     private LevelStatus statusBeforeAction;
+    private string stateSignatureBeforeAction;
+    private float? distanceToGoalBeforeAction;
 
     private PlayerMemory memory = new PlayerMemory();
     private IPlayerProfile profile;
@@ -129,6 +131,8 @@ public class PlayerSimBrain : MonoBehaviour
                     chosenActionId = chosenCandidate.ActionId;
                     interactableCountBeforeAction = currentGameState.Interactables.Count;
                     statusBeforeAction = currentGameState.Status;
+                    stateSignatureBeforeAction = currentGameState.StateSignature;
+                    distanceToGoalBeforeAction = currentGameState.DistanceToGoal;
 
                     float thinkingDelay = profile.GetThinkingDelay();
                     if (thinkingDelay > 0f)
@@ -157,12 +161,58 @@ public class PlayerSimBrain : MonoBehaviour
                 case BotState.Evaluating:
                     currentGameState = stateReader != null ? stateReader.GetGameState() : scanner.GetCurrentState();
 
-                    bool wasEffective = currentGameState.Interactables.Count != interactableCountBeforeAction
-                        || currentGameState.Status != statusBeforeAction;
+                    // GENERIC FRAMEWORK - ADIM 9: eski Count/Status kontrolu AYNEN korunuyor,
+                    // uzerine GameState.StateSignature bazli bir ucuncu OR kosulu ekleniyor.
+                    // signatureChanged sadece HER IKI taraf da (before/after) dolu VE
+                    // farkliysa true olur - adapter StateSignature doldurmuyorsa (bugunku
+                    // PuzzleGameAdapter/LevelScanner yolu) bu kosul hep false kalir ve
+                    // wasEffective TAMAMEN eski mantiga (countChanged || statusChanged) esdeger
+                    // olur - davranis sifir degisir. CounterGame'e (veya baska bir adapter'a)
+                    // ozel hicbir tip/isim kontrolu yok.
+                    bool signatureChanged =
+                        !string.IsNullOrEmpty(stateSignatureBeforeAction) &&
+                        !string.IsNullOrEmpty(currentGameState.StateSignature) &&
+                        stateSignatureBeforeAction != currentGameState.StateSignature;
+
+                    bool countChanged =
+                        currentGameState.Interactables.Count != interactableCountBeforeAction;
+
+                    bool statusChanged =
+                        currentGameState.Status != statusBeforeAction;
+
+                    bool wasEffective = signatureChanged || countChanged || statusChanged;
 
                     bool wasSafe = currentGameState.Status != LevelStatus.Failed;
 
-                    memory.RecordAttempt(chosenActionId, wasEffective, wasSafe);
+                    // GENERIC FRAMEWORK - ADIM 11: wasEffective/wasSafe'e HICBIR sekilde
+                    // dokunulmadi (yukaridaki iki satir AYNEN duruyor) - progress tamamen
+                    // BAGIMSIZ, ucuncu bir sinif. distanceToGoalBeforeAction veya
+                    // currentGameState.DistanceToGoal null ise (adapter doldurmuyorsa,
+                    // bugunku PuzzleGameAdapter/LevelScanner yolu dahil) Unknown kalir -
+                    // asagidaki mantik hicbir CounterGame'e ozel isim/tip kontrolu icermiyor.
+                    ProgressClassification progress;
+                    if (!distanceToGoalBeforeAction.HasValue || !currentGameState.DistanceToGoal.HasValue)
+                    {
+                        progress = ProgressClassification.Unknown;
+                    }
+                    else
+                    {
+                        float progressDelta = distanceToGoalBeforeAction.Value - currentGameState.DistanceToGoal.Value;
+                        if (progressDelta > 0f)
+                        {
+                            progress = ProgressClassification.Productive;
+                        }
+                        else if (progressDelta < 0f)
+                        {
+                            progress = ProgressClassification.Regressive;
+                        }
+                        else
+                        {
+                            progress = ProgressClassification.Neutral;
+                        }
+                    }
+
+                    memory.RecordAttempt(chosenActionId, wasEffective, wasSafe, progress);
 
                     trace.Add(new ActionTraceEntry
                     {
@@ -196,7 +246,17 @@ public class PlayerSimBrain : MonoBehaviour
                     break;
             }
 
-            yield return new WaitForSeconds(stepDelay);
+            // GENERIC FRAMEWORK - ADIM 10: burada ONCEDEN, switch disinda ve HER case
+            // icin kosulsuz calisan ikinci bir "yield return new WaitForSeconds(stepDelay)"
+            // vardi. Executing case'i zaten aksiyonu uygulamadan hemen once KENDI
+            // stepDelay beklemesini yapiyor (yukarida) - bu ikisi ust uste binince tek
+            // bir aksiyon dongusu (Scanning+Planning+Executing+Evaluating) 4 ayri
+            // iterasyonun HER BIRINDE bu bekleme calistigi icin 4x, Executing'in kendi
+            // ekstra beklemesiyle birlikte 5x stepDelay'e kadar yigiliyordu - bu da
+            // dusuk stepDelay/timeoutSeconds degerlerinde (orn. CounterGame sahnesi)
+            // sadece birkac adimda timeout'a sebep oluyordu. Aksiyonlar arasi tek ve
+            // tutarli bekleme noktasi ARTIK SADECE Executing case'inin icindeki
+            // "yield return new WaitForSeconds(stepDelay)" - bu yuzden burasi kaldirildi.
         }
     }
 
